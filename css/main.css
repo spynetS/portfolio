@@ -1,7 +1,8 @@
-body{
+html,body{
     margin: 0px;
     padding: 0px;
     background-color: #101010;
+    height: 100%;
     background-image: radial-gradient(
         farthest-corner at 40px 40px,
         rgba(255, 51, 85, 0.705) 0%,
@@ -9,19 +10,28 @@ body{
     );
 }
 
-.content{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media only screen and (max-width: 700px) {
+    .content{
+        width: 100%;
+        height: 100hv;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }  
 }
-.contentSection{
-    padding: 10px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
 
-}
+
+  @media only screen and (min-width: 1200px) {
+    .content{
+        width: 100%;
+        height: 100hv;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }  }
+
 .card{
     scale: 100%;
     background-color: #202020;
@@ -35,6 +45,7 @@ body{
 
 }
 a{
+    text-decoration-line: none;
     outline: none;
 }
 .card:hover{

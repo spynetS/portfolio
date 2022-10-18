@@ -7,15 +7,100 @@
     display:flex;
     justify-content: space-between;
 }
-
-.links{
-    
-    width: 33%;
-    display:flex;
-    margin-right: 50px;
-    justify-content: space-between;
-    
+@media only screen and (max-width: 800px) {
+   
+ .links{
+        
+    display:none;
+    }
+    #menu{
+        color: white;
+        position: fixed;
+        z-index: 50;
+        background-color: rgba(21, 21, 21, 0.959);
+        height: 100%;
+        width: 100%;
+        top: -100%;
+        left:0;
+        transition-duration: 500ms;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        font-size: xx-large;
+    }
+    #hamburger{        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scale: 100%;
+        transition-duration: 100ms;
+        margin-right: 15px;
+    }
 }
+@media only screen and (min-width: 800px) {
+
+    .links{
+            
+        width: 33%;
+        display:flex;
+        margin-right: 50px;
+        justify-content: space-between;
+        
+    }
+    
+    #hamburger{        
+        display: none;
+    }
+    #menu{
+    display: none;
+    }
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    scale: 100%;
+    margin: 10px;
+    transition-duration: 100ms;
+}
+
+
+#hamburger:hover{
+    scale: 110%;
+    transition-duration: 100ms;
+}
+
+#hamburger:hover ~ #menu{
+    top: 0%;
+    transition-duration: 500ms;
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+   
+    .welcome{
+        margin-left: 50%;
+    }
+  
+    
+    .image:hover{
+        scale: 110%;
+        transition-duration: 100ms;
+    
+    }
+    .logotype{
+        margin-left: 50px;
+    }
+
+}
+
 .buttons{
     display: flex;
     
@@ -38,19 +123,4 @@
     padding: 10px;
 }
 
-.images{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.image{
-    scale: 100%;
-    transition-duration: 100ms;
-}
-
-.image:hover{
-    scale: 110%;
-    transition-duration: 100ms;
-
-}

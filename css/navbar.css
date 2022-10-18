@@ -1,0 +1,56 @@
+.navbar{
+   
+    background-color: #353535;
+    height: 100px;
+    padding: 5px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.links{
+    
+    width: 33%;
+    display:flex;
+    margin-right: 50px;
+    justify-content: space-between;
+    
+}
+.buttons{
+    display: flex;
+    
+}
+
+.navbutton{
+    color:#A7A7A7;
+    padding: 10px;
+    transition-duration: 200ms;
+}
+.navbutton:hover{
+    color:rgb(235, 235, 235);
+    cursor: pointer;
+    transition-duration: 200ms;
+
+}
+.selectednavbutton{
+    color:white;
+    scale: 101%;
+    padding: 10px;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    scale: 100%;
+    transition-duration: 100ms;
+}
+
+.image:hover{
+    scale: 110%;
+    transition-duration: 100ms;
+
+}

@@ -50,6 +50,6 @@ a{
 }
 .card:hover{
     scale: 102%;
-    margin-bottom: 50px;
     transition-duration: 400ms;
+    transform: translate(0px, -18px);
 }

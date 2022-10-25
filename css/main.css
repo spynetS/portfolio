@@ -1,8 +1,8 @@
-html,body{
+body{
     margin: 0px;
     padding: 0px;
     background-color: #101010;
-    height: 100%;
+    height: 120%;
     background-image: radial-gradient(
         farthest-corner at 40px 40px,
         rgba(255, 51, 85, 0.705) 0%,
@@ -14,7 +14,6 @@ html,body{
     .content{
         width: 100%;
         height: 100%;
-    
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -27,7 +26,7 @@ html,body{
     .content{
         width: 100%;
         height: 100%;
-    
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;

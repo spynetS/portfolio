@@ -1,16 +1,16 @@
-html,body{
+body{
     margin: 0px;
     padding: 0px;
-    background-color: #101010;
-    height: 100%;
+    min-height: 100%;
     background-image: radial-gradient(
         farthest-corner at 40px 40px,
         rgba(255, 51, 85, 0.705) 0%,
         rgba(66, 51, 238, 0.588) 100%
     );
 }
-
-
+html{
+    height: 100%;
+}
 
 
   @media only screen and (min-width: 1200px) {

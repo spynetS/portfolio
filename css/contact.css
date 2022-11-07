@@ -24,13 +24,24 @@ html{
         display: flex;
         flex-direction: rows;
         justify-content: center;
+        transition: ease-in;
+        animation: fadeIn;
+        animation-duration: 1s;
+    } 
+
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
     } 
     
 }
 
 .content{
+
     width: 100%;
     height: 100%;
+    transform: scale(1);
+    animation-duration: 10s;
     align-items: center;
 }
 

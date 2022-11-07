@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     min-height: 100%;
+    background-color: #202020;
     background-image: radial-gradient(
         farthest-corner at 40px 40px,
         rgba(255, 51, 85, 0.705) 0%,
